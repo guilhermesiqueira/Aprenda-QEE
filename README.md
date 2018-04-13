@@ -25,6 +25,8 @@
 
  
 
+**Autor:** Guilherme Siqueira Brandão
 
-* Aluno: Guilherme Siqueira Brandão
-* Matrícula:16/0007763
+**Disciplina:** Orientação a Objetos - 2º Semestre de 2017
+
+**Instituição:** Universidade de Brasília - UnB
