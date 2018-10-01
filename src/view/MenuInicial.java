@@ -31,7 +31,7 @@ public class MenuInicial extends JFrame {
 		lblAprendaQee.setBounds(638, 12, 90, 15);
 		painelInicial.add(lblAprendaQee);
 		
-		JButton btnFluxodePotenciaFundamental = new JButton("Fluxo de Potencia Fundamental");
+		JButton btnFluxodePotenciaFundamental = new JButton("Fluxo de Potência Fundamental");
 		btnFluxodePotenciaFundamental.setBounds(553, 154, 259, 25);
 		btnFluxodePotenciaFundamental.addActionListener(new AcoesMenuInicial(painelInicial,telaInicial));
 		painelInicial.add(btnFluxodePotenciaFundamental);
