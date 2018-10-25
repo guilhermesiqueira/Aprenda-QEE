@@ -25,7 +25,7 @@ public class CalculosDistorcaoHarmonica implements ContratoCalculos{
 	private double ordemHarmonica4;
 	private double ordemHarmonica5;
 	private double ordemHarmonica6;
-	
+
 	public double getAmplitudeComponenteFundamental() {
 		return amplitudeComponenteFundamental;
 	}
@@ -149,109 +149,99 @@ public class CalculosDistorcaoHarmonica implements ContratoCalculos{
 	public ArrayList<Double> pontosGrafHarmonico1(){
 		ArrayList<Double> grafHarmonico1 = new ArrayList<>();
 
-        for (double i = 0; i < 101; i = (float) (i + 0.1)) {
-            grafHarmonico1.add(getAmplitudeHarmonica1()*cos((getOrdemHarmonica1()*2*3.14*60*i) + getAnguloHarmonica1()));
-        }
-        return (grafHarmonico1);
+    for (double i = 0; i < 101; i = (float) (i + 0.1)) {
+        grafHarmonico1.add(getAmplitudeHarmonica1()*cos((getOrdemHarmonica1()*2*3.14*60*i) + getAnguloHarmonica1()));
     }
+    return (grafHarmonico1);
+  }
 	public ArrayList<Double> pontosGrafHarmonico2(){
 		ArrayList<Double> grafHarmonico2 = new ArrayList<>();
 
-        for (double i = 0; i < 101; i = (float) (i + 0.1)) {
-            grafHarmonico2.add(getAmplitudeHarmonica2()*cos((getOrdemHarmonica2()*2*3.14*60*i) + getAnguloHarmonica2()));
-        }
-        return (grafHarmonico2);
+    for (double i = 0; i < 101; i = (float) (i + 0.1)) {
+        grafHarmonico2.add(getAmplitudeHarmonica2()*cos((getOrdemHarmonica2()*2*3.14*60*i) + getAnguloHarmonica2()));
     }
-	
+    return (grafHarmonico2);
+  }
+
 	public ArrayList<Double> pontosGrafHarmonico3(){
 		ArrayList<Double> grafHarmonico3 = new ArrayList<>();
 
-        for (double i = 0; i < 101; i = (float) (i + 0.1)) {
-            grafHarmonico3.add(getAmplitudeHarmonica1()*cos((getOrdemHarmonica3()*2*3.14*60*i) + getAnguloHarmonica3()));
-        }
-        return (grafHarmonico3);
+    for (double i = 0; i < 101; i = (float) (i + 0.1)) {
+        grafHarmonico3.add(getAmplitudeHarmonica1()*cos((getOrdemHarmonica3()*2*3.14*60*i) + getAnguloHarmonica3()));
     }
-	
+    return (grafHarmonico3);
+  }
+
 	public ArrayList<Double> pontosGrafHarmonico4(){
 		ArrayList<Double> grafHarmonico4 = new ArrayList<>();
 
-        for (double i = 0; i < 101; i = (float) (i + 0.1)) {
-            grafHarmonico4.add(getAmplitudeHarmonica4()*cos((getOrdemHarmonica4()*2*3.14*60*i) + getAnguloHarmonica4()));
-        }
-        return (grafHarmonico4);
+    for (double i = 0; i < 101; i = (float) (i + 0.1)) {
+        grafHarmonico4.add(getAmplitudeHarmonica4()*cos((getOrdemHarmonica4()*2*3.14*60*i) + getAnguloHarmonica4()));
     }
+    return (grafHarmonico4);
+  }
 	public ArrayList<Double> pontosGrafHarmonico5(){
 		ArrayList<Double> grafHarmonico5 = new ArrayList<>();
 
-        for (double i = 0; i < 101; i = (float) (i + 0.1)) {
-            grafHarmonico5.add(getAmplitudeHarmonica5()*cos((getOrdemHarmonica5()*2*3.14*60*i) + getAnguloHarmonica5()));
-        }
-        return (grafHarmonico5);    
+    for (double i = 0; i < 101; i = (float) (i + 0.1)) {
+        grafHarmonico5.add(getAmplitudeHarmonica5()*cos((getOrdemHarmonica5()*2*3.14*60*i) + getAnguloHarmonica5()));
     }
+    return (grafHarmonico5);
+  }
 	public ArrayList<Double> pontosGrafHarmonico6(){
 		ArrayList<Double> grafHarmonico6 = new ArrayList<>();
 
-        for (double i = 0; i < 101; i = (float) (i + 0.1)) {
-            grafHarmonico6.add(getAmplitudeHarmonica6()*cos((getOrdemHarmonica6()*2*3.14*60*i) + getAnguloHarmonica6()));
-        }
-        return (grafHarmonico6);
+    for (double i = 0; i < 101; i = (float) (i + 0.1)) {
+        grafHarmonico6.add(getAmplitudeHarmonica6()*cos((getOrdemHarmonica6()*2*3.14*60*i) + getAnguloHarmonica6()));
     }
+    return (grafHarmonico6);
+  }
 
 	public ArrayList<Double> ondas(){
-        ArrayList<Double> grafresultante = new ArrayList<>();
+  	ArrayList<Double> grafresultante = new ArrayList<>();
 
-        for (double i = 0; i < 101; i = (float) (i + 0.1)) {
-            grafresultante.add(getAmplitudeComponenteFundamental()*cos((2*3.14*60*i) + getAmplitudeComponenteFundamental()) + getAmplitudeHarmonica1()*cos((getOrdemHarmonica1()*2*3.14*60*i) + getAnguloHarmonica1()) +getAmplitudeHarmonica2()*cos((getOrdemHarmonica2()*2*3.14*60*i) + getAnguloHarmonica2()) +
-            getAmplitudeHarmonica3()*cos((getOrdemHarmonica3()*2*3.14*60*i) + getAnguloHarmonica3()) + getAmplitudeHarmonica4()*cos((getOrdemHarmonica4()*2*3.14*60*i) + getAnguloHarmonica4()) + getAmplitudeHarmonica5()*cos((getOrdemHarmonica5()*2*3.14*60*i) + getAnguloHarmonica5()) +
-            getAmplitudeHarmonica6()*cos((getOrdemHarmonica6()*2*3.14*60*i) + getAnguloHarmonica6()));
-        }
-        return (grafresultante);
+    for (double i = 0; i < 101; i = (float) (i + 0.1)) {
+        grafresultante.add(getAmplitudeComponenteFundamental()*cos((2*3.14*60*i) + getAmplitudeComponenteFundamental()) + getAmplitudeHarmonica1()*cos((getOrdemHarmonica1()*2*3.14*60*i) + getAnguloHarmonica1()) +getAmplitudeHarmonica2()*cos((getOrdemHarmonica2()*2*3.14*60*i) + getAnguloHarmonica2()) +
+        getAmplitudeHarmonica3()*cos((getOrdemHarmonica3()*2*3.14*60*i) + getAnguloHarmonica3()) + getAmplitudeHarmonica4()*cos((getOrdemHarmonica4()*2*3.14*60*i) + getAnguloHarmonica4()) + getAmplitudeHarmonica5()*cos((getOrdemHarmonica5()*2*3.14*60*i) + getAnguloHarmonica5()) +
+        getAmplitudeHarmonica6()*cos((getOrdemHarmonica6()*2*3.14*60*i) + getAnguloHarmonica6()));
     }
-	
+    return (grafresultante);
+  }
+
 	public String Fourrier() {
 		String componenteFundamental = "",harmonico1 = "",harmonico2 = "",harmonico3 = "",
                 harmonico4 ="",harmonico5 ="",harmonico6 ="", resultante = "";
-        if(getAmplitudeComponenteFundamental() != 0){
-        	componenteFundamental = getAmplitudeComponenteFundamental()+"cos(ωt + "+getAnguloComponenteFundamental()+")  ";
-        }
-        if(getAmplitudeHarmonica1() !=0){
-            harmonico1 = "+"+getAmplitudeHarmonica1()+"cos("+getOrdemHarmonica1()+"ωt + "+getAnguloHarmonica1()+")  ";
-        }
-        if(getAmplitudeHarmonica2() !=0){
-            harmonico2 = "+"+getAmplitudeHarmonica2()+"cos("+getOrdemHarmonica2()+"ωt + "+getAnguloHarmonica2()+")  ";
-        }
-        if(getAmplitudeHarmonica3() !=0){
-            harmonico3 = "+"+getAmplitudeHarmonica3()+"cos("+getOrdemHarmonica3()+"ωt + "+getAnguloHarmonica3()+")  ";
-        }
-        if(getAmplitudeHarmonica4() !=0){
-            harmonico4 = "+"+getAmplitudeHarmonica4()+"cos("+getOrdemHarmonica4()+"ωt + "+getAnguloHarmonica4()+")  ";
-        }
-        if(getAmplitudeHarmonica5() !=0){
-            harmonico5 = "+"+getAmplitudeHarmonica5()+"cos("+getOrdemHarmonica5()+"ωt + "+getAnguloHarmonica5()+")  ";
-        }
-        if(getAmplitudeHarmonica6() !=0){
-            harmonico6 = "+"+getAmplitudeHarmonica6()+"cos("+getOrdemHarmonica6()+"ωt + "+getAnguloHarmonica6()+")  ";
-        }
-        
-        resultante = "f(t)= "+componenteFundamental+harmonico1+harmonico2+harmonico3+harmonico4+harmonico5+harmonico6;
-        return (resultante);
+    if(getAmplitudeComponenteFundamental() != 0){
+    	componenteFundamental = getAmplitudeComponenteFundamental()+"cos(ωt + "+getAnguloComponenteFundamental()+")  ";
     }
+    if(getAmplitudeHarmonica1() !=0){
+        harmonico1 = "+"+getAmplitudeHarmonica1()+"cos("+getOrdemHarmonica1()+"ωt + "+getAnguloHarmonica1()+")  ";
+    }
+    if(getAmplitudeHarmonica2() !=0){
+        harmonico2 = "+"+getAmplitudeHarmonica2()+"cos("+getOrdemHarmonica2()+"ωt + "+getAnguloHarmonica2()+")  ";
+    }
+    if(getAmplitudeHarmonica3() !=0){
+        harmonico3 = "+"+getAmplitudeHarmonica3()+"cos("+getOrdemHarmonica3()+"ωt + "+getAnguloHarmonica3()+")  ";
+    }
+    if(getAmplitudeHarmonica4() !=0){
+        harmonico4 = "+"+getAmplitudeHarmonica4()+"cos("+getOrdemHarmonica4()+"ωt + "+getAnguloHarmonica4()+")  ";
+    }
+    if(getAmplitudeHarmonica5() !=0){
+        harmonico5 = "+"+getAmplitudeHarmonica5()+"cos("+getOrdemHarmonica5()+"ωt + "+getAnguloHarmonica5()+")  ";
+    }
+    if(getAmplitudeHarmonica6() !=0){
+        harmonico6 = "+"+getAmplitudeHarmonica6()+"cos("+getOrdemHarmonica6()+"ωt + "+getAnguloHarmonica6()+")  ";
+    }
+
+    resultante = "f(t)= "+componenteFundamental+harmonico1+harmonico2+harmonico3+harmonico4+harmonico5+harmonico6;
+    return (resultante);
+  }
 	public ArrayList<Double> pontosComponenteFundamental(){
-        ArrayList<Double> pontosComponenteFundamental = new ArrayList<>();
-        for (double i = 0; i <= 100; i=(float)(i + 0.1)) {
-            pontosComponenteFundamental.add(getAmplitudeComponenteFundamental()*cos((2*3.14*60*i) + getAnguloComponenteFundamental()));
-        }
-        return (pontosComponenteFundamental);
+    ArrayList<Double> pontosComponenteFundamental = new ArrayList<>();
+    for (double i = 0; i <= 100; i=(float)(i + 0.1)) {
+        pontosComponenteFundamental.add(getAmplitudeComponenteFundamental()*cos((2*3.14*60*i) + getAnguloComponenteFundamental()));
     }
+    return (pontosComponenteFundamental);
+	}
 
 }
-	
-
-		
-	
-
-
-
-
-
-

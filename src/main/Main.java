@@ -16,7 +16,6 @@ public class Main {
 				try {
 					JFrame telaInicial = new JFrame("Aprenda QEE");
 					telaInicial.setVisible(false);
-					//telaInicial = new JFrame("Teste");
 					telaInicial.setSize(2000, 3000);
 					telaInicial.setLocationRelativeTo(null);
 					telaInicial.setResizable(true);
@@ -24,10 +23,9 @@ public class Main {
 					MenuInicial menuInicial = new MenuInicial(telaInicial);
 				} catch (Exception e) {
 					e.printStackTrace();
-				} 
-		
+				}
+
 			}
 		});
 	}
 }
-	
